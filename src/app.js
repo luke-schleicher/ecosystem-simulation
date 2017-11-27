@@ -1,7 +1,11 @@
+import Arena from './arena';
+
 class App {
 
-  run() {
-    console.log('heyo');
+  constructor() {
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+    const arena = new Arena(canvas);
   }
 
 }
