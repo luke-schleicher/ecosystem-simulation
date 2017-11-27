@@ -1,3 +1,4 @@
-require("babel-polyfill")
+import App from './app';
 
-console.log('hi');
+const app = new App();
+app.run();
